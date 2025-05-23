@@ -1,0 +1,93 @@
+%-------------------- Preamble --------------------
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsfonts, mathrsfs}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{newcomputermodern}
+\usepackage{titling}
+\usepackage{fontspec}
+
+%------------- Custom Font Settings ----------------
+
+\setmonofont{JetBrainsMono Nerd Font}
+
+%-------------------- Geometry --------------------
+
+\geometry{
+  a4paper,
+  margin=1in,
+}
+
+%-------------------- Custom Math Operators --------------------
+\DeclareMathOperator{\Arcsin}{Arcsin}
+\DeclareMathOperator{\cosec}{cosec}
+\DeclareMathOperator{\Ai}{Ai}
+\DeclareMathOperator{\Bi}{Bi}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\Orb}{Orb}
+\DeclareMathOperator{\Fix}{Fix}
+\DeclareMathOperator{\Sub}{Sub}
+\DeclareMathOperator{\ccl}{ccl}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\Or}{O}
+\DeclareMathOperator{\Un}{U}
+\DeclareMathOperator{\SU}{SU}
+
+%-------------------- Section Formatting --------------------
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+%-------------------- Hyperlink Color --------------------
+\hypersetup{
+  colorlinks=true,
+  linkcolor=red,
+  urlcolor=blue,
+  citecolor=green,
+}
+
+%-------------------- Titling --------------------
+
+\setlength{\droptitle}{-6em}
+\pretitle{
+\begin{center}\bfseries\LARGE}   % Bold, large, centered
+  \posttitle{\par
+\end{center}\vskip 0.5em}
+\preauthor{
+\begin{center}\ttfamily}        % Typewriter, centered
+  \postauthor{
+\end{center}}
+\predate{
+\begin{center}}
+  \postdate{
+\end{center}}
+
+%-------------------- Title and Author --------------------
+
+\title{}
+\author{}
+\date{}
+
+%-------------------- Document --------------------
+\begin{document}
+
+\maketitle
+
+% Add horizontal separator if needed
+
+% \begin{center}
+%   \vspace{-2em}
+%   \rule{0.8\textwidth}{0.5pt}
+% \end{center}
+
+%-------------------- Main Body --------------------
+
+\end{document}
