@@ -144,8 +144,13 @@
   show raw: set text(font: "Liga SFMono Nerd Font")
   set enum(numbering: "(i)")
 
-  // Headings use sans font
+  // Headings and outline use sans font
   show heading: set text(font: "New Computer Modern Sans", weight: "bold")
+  show outline.entry.where(level: 1): set text(
+    font: "New Computer Modern Sans",
+    weight: "bold",
+  )
+  show outline: set text(font: "New Computer Modern Sans")
   show: thmrules
 
   // Equation numbering
