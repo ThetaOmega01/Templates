@@ -111,12 +111,10 @@
   set document(author: authors, title: title)
   set page(numbering: "1", number-align: center)
   set text(font: "New Computer Modern", lang: "en")
+  show raw: set text(font: "Liga SFMono Nerd Font")
   set enum(numbering: "(i)")
 
-  show math.equation: set text(weight: 400)
-  set math.equation(numbering: "(1)", supplement: [Eq.])
   show: thmrules
-  // set enum(numbering: "(i)")
 
   // Equation numbering
   show heading.where(level: 1): it => {

@@ -50,6 +50,7 @@
   set document(author: authors, title: title)
   set page(numbering: "1", number-align: center)
   set text(font: "New Computer Modern", lang: "en")
+  show raw: set text(font: "Liga SFMono Nerd Font")
   set enum(numbering: "(i)")
 
   // Theorem styles
