@@ -17,9 +17,8 @@
   "Definition",
   titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
   namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
-  inset: 0em,
   base_level: 1,
-  separator: [#h(0.1em)*.*#h(0.2em)],
+  fill: rgb(227, 242, 251),
 )
 
 #let theorem = thmbox(
@@ -27,9 +26,8 @@
   "Theorem",
   titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
   namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
-  inset: 0em,
   base_level: 1,
-  separator: [#h(0.1em)*.*#h(0.2em)],
+  fill: rgb(254, 247, 234),
 )
 
 #let conjecture = thmbox(
@@ -47,9 +45,8 @@
   "Proposition",
   titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
   namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
-  inset: 0em,
   base_level: 1,
-  separator: [#h(0.1em)*.*#h(0.2em)],
+  fill: rgb(255, 253, 233),
 )
 
 #let slemma = thmbox(
