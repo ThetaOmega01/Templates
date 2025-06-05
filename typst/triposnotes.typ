@@ -1,3 +1,12 @@
+/*
+ * Usage:
+ * #show: project.with(
+ *  title: "<Title of the Project>",
+ *  authors: (
+ *    "<Author 1 Name>", "<Author 2 Name>", etc.
+ *  ),
+ * )
+ */
 #import "@preview/physica:0.9.5": *
 #import "@preview/ctheorems:1.1.3": *
 #import "@preview/xarrow:0.3.1": *
@@ -114,12 +123,10 @@
     it
     counter(math.equation).update(0)
   }
-  set math.equation(
-    numbering: num => {
-      let chapter_num = counter(heading).get().first()
-      numbering("(1.1)", chapter_num, num)
-    },
-  )
+  set math.equation(numbering: num => {
+    let chapter_num = counter(heading).get().first()
+    numbering("(1.1)", chapter_num, num)
+  })
 
   // Redefine some math symbols
   show math.gt.eq: math.gt.eq.slant
@@ -130,16 +137,11 @@
   ]
 
   // Author information.
-  pad(
-    top: 0.5em,
-    bottom: 0.5em,
-    x: 2em,
-    grid(
-      columns: (1fr,) * calc.min(3, authors.len()),
-      gutter: 1em,
-      ..authors.map(author => align(center, raw(author))),
-    ),
-  )
+  pad(top: 0.5em, bottom: 0.5em, x: 2em, grid(
+    columns: (1fr,) * calc.min(3, authors.len()),
+    gutter: 1em,
+    ..authors.map(author => align(center, raw(author))),
+  ))
 
   // Main body
   set par(justify: true)
