@@ -15,6 +15,8 @@
 #let definition = thmbox(
   "definition",
   "Definition",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -23,6 +25,8 @@
 #let theorem = thmbox(
   "theorem",
   "Theorem",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -31,6 +35,8 @@
 #let conjecture = thmbox(
   "theorem",
   "Conjecture",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -39,6 +45,8 @@
 #let proposition = thmbox(
   "theorem",
   "Proposition",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -47,6 +55,8 @@
 #let slemma = thmbox(
   "theorem",
   "Lemma",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -55,6 +65,8 @@
 #let lemma = thmbox(
   "theorem",
   "Lemma",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -63,6 +75,8 @@
 #let corollary = thmbox(
   "theorem",
   "Corollary",
+  titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
+  namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   inset: 0em,
   base_level: 1,
   separator: [#h(0.1em)*.*#h(0.2em)],
@@ -71,6 +85,10 @@
 #let example = thmplain(
   "example",
   "Example",
+  titlefmt: it => (text(font: "New Computer Modern Sans", style: "italic", it)),
+  namefmt: it => (
+    text(font: "New Computer Modern Sans", style: "italic")[(#it)]
+  ),
   base_level: 1,
   inset: 0em,
   separator: [#h(0.1em).#h(0.2em)],
@@ -79,6 +97,10 @@
 #let note = thmplain(
   "note",
   "Note",
+  titlefmt: it => (text(font: "New Computer Modern Sans", style: "italic", it)),
+  namefmt: it => (
+    text(font: "New Computer Modern Sans", style: "italic")[(#it)]
+  ),
   inset: 0em,
   separator: [#h(0.1em).#h(0.2em)],
 ).with(numbering: none)
@@ -86,6 +108,10 @@
 #let remark = thmplain(
   "remark",
   "Remark",
+  titlefmt: it => (text(font: "New Computer Modern Sans", style: "italic", it)),
+  namefmt: it => (
+    text(font: "New Computer Modern Sans", style: "italic")[(#it)]
+  ),
   inset: 0em,
   separator: [#h(0.1em).#h(0.2em)],
 ).with(numbering: none)
@@ -93,6 +119,10 @@
 #let proof = thmproof(
   "proof",
   "Proof",
+  titlefmt: it => (text(font: "New Computer Modern Sans", style: "italic", it)),
+  namefmt: it => (
+    text(font: "New Computer Modern Sans", style: "italic")[(#it)]
+  ),
   inset: 0em,
   bodyfmt: body => [#body #h(1fr) $square$],
   separator: [#h(0.1em).#h(0.2em)],
@@ -114,6 +144,8 @@
   show raw: set text(font: "Liga SFMono Nerd Font")
   set enum(numbering: "(i)")
 
+  // Headings use sans font
+  show heading: set text(font: "New Computer Modern Sans", weight: "bold")
   show: thmrules
 
   // Equation numbering
