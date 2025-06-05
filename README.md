@@ -8,6 +8,7 @@ settings. The following is an ongoing list of the customisations that
 may not work elsewhere:
 
 - In `typst/coursework.typ` and `typst/triposnotes.typ`:
-  ```typst
+
+  ```typ
   show raw: set text(font: "Liga SFMono Nerd Font")
   ```
