@@ -43,6 +43,8 @@
 #let cosec = $op("cosec", limits: #true)$
 #let Ai = $op("Ai")$
 #let Bi = $op("Bi")$
+#let ord = $op("ord")$
+#let Isom = $op("Isom")$
 
 // Main
 #let project(title: "", authors: (), body) = {
@@ -67,7 +69,12 @@
   show math.lt.eq: math.lt.eq.slant
   // Title row.
   align(center)[
-    #block(text(weight: 700, 1.75em, title))
+    #block(text(
+      weight: 700,
+      size: 1.5em,
+      font: "New Computer Modern Sans",
+      title,
+    ))
   ]
 
   // Author information.
