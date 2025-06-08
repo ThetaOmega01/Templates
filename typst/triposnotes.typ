@@ -18,6 +18,7 @@
   titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
   namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   base_level: 1,
+  separator: [#h(0.1em)*.*#h(0.2em)],
   fill: rgb(227, 242, 251),
 )
 
@@ -27,6 +28,7 @@
   titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
   namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   base_level: 1,
+  separator: [#h(0.1em)*.*#h(0.2em)],
   fill: rgb(254, 247, 234),
 )
 
@@ -46,6 +48,7 @@
   titlefmt: it => (text(font: "New Computer Modern Sans", weight: "bold", it)),
   namefmt: it => (text(font: "New Computer Modern Sans")[(#it)]),
   base_level: 1,
+  separator: [#h(0.1em)*.*#h(0.2em)],
   fill: rgb(255, 253, 233),
 )
 
