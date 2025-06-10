@@ -1,0 +1,63 @@
+% simplearticle.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{standalone_article}[2025/05/21 Standalone Article Class]
+
+% AMS math packages
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+
+% Unicode and hyperlinks
+\RequirePackage{hyperref}
+\hypersetup{
+  unicode,
+  colorlinks,
+  breaklinks,
+  urlcolor=cyan,
+  linkcolor=blue,
+  pdfauthor={ThetaOmega},
+  pdfproducer={LaTeX2e},
+  pdfcreator={Tectonic}
+}
+
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}{Claim}[theorem]
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{criterion}[theorem]{Criterion}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{principle}[theorem]{Principle}
+
+% Graphics and color
+\RequirePackage{graphicx}
+\RequirePackage{color}
+\graphicspath{{fig/}}
+
+% Algorithms
+% \RequirePackage{algorithm}
+% \RequirePackage{algpseudocode}
+
+% Math script font
+\RequirePackage{mathrsfs}
+
+% Layout
+\RequirePackage{parskip}
+\RequirePackage[shortlabels]{enumitem}
+
+% CJK
+\usepackage{xeCJK}
+\pagenumbering{gobble}
+\everymath{\displaystyle}
