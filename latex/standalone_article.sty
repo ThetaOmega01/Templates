@@ -56,6 +56,12 @@
 % Layout
 \RequirePackage{parskip}
 \RequirePackage[shortlabels]{enumitem}
+\setlist[enumerate]{label=(1)}
+\newsavebox{\uphantombox}
+\newcommand{\uphantom}[1]{%
+  \sbox{\uphantombox}{#1}%
+  \rule{0pt}{\ht\uphantombox}%
+}
 
 % CJK
 \usepackage{xeCJK}
